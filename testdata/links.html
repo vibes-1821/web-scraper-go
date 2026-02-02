@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Links Page</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Test Links for Crawler</h1>
+        <nav>
+            <a href="/page1">Internal Link 1</a>
+            <a href="/page2">Internal Link 2</a>
+            <a href="/page3">Internal Link 3</a>
+            <a href="#section1">Anchor Link (should be skipped)</a>
+            <a href="javascript:void(0)">JavaScript Link (should be skipped)</a>
+            <a href="">Empty Link (should be skipped)</a>
+            <a href="http://external.com/page">External Link</a>
+            <a href="/page1#anchor">Link with fragment</a>
+        </nav>
+        <div class="main">
+            <p>Some content with <a href="/nested/page">nested links</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
